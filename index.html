@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>New User Signup</h1>
+    <form>
+
+        <input type="text" name="username" placeholder="username">
+        <p>Username must be  and contain 5 - 12 characters</p>
+
+        <input type="text" name="email" placeholder="email">
+        <p>Email must be a valid address, e.g. me@mydomain.com</p>
+
+        <input type="password" name="password" placeholder="password">
+        <!-- this is a hint that would say what would be inside of each input and what user should enter there as well so thisi s going to contai nthat as well so this is the criteria of this as well this is what we will do this is the critaria that we want to adhere to only matche these thgns right here if we have  -->
+        <p>Password must alphanumeric (@, _ and - are also allowed) and be 8 - 20 characters</p>
+
+        <input type="text" name="telephone" placeholder="telephone">
+        <p>Telephone must be a valid UK telephone number (11 digits)</p>
+
+        <input type="text" name="slug" placeholder="profile slug">
+        <p>Slug must contain only lowercase letters, numbers and hyphens and be 8 - 20 characters</p>
+        <button>Submit</button>
+        </form>
+      <script src="app.js"></script>
+</body>
+</html>
+
