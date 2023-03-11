@@ -1,0 +1,19 @@
+{
+  "name": "login-form",
+  "version": "1.0.0",
+  "description": "login form using css-html",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "login-form",
+    "form",
+    "form"
+  ],
+  "author": "azka",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.59.2"
+  }
+}
