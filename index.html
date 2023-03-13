@@ -7,8 +7,55 @@
     <title>Document</title>
 </head>
 <body>
-    <main>
-        
+    <!-- Main container -->
+    <main class="container">
+        <!-- Form start -->
+        <article class="card">
+            <h1>PLAY YOUR FAVORITE VIDEO GAMES ANYWHERE, ANYTIME, ON ANY DEVICE </h1>
+            <form action="https://httpbin.org/post" method="post" class="form-container">
+                <!-- Personal info start -->
+                <fieldset>
+                    <legend>
+                        <h2>Personal info</h2>
+                    </legend>
+                    <!-- username -->
+                    <label for="userName">
+                        *Username: 
+                        <input type="text" id="userName" name="user-name" required pattern="[a-zA-Z][a-z-A-Z0-9_\-]+" title="Username must start with alphabetical characters, and numbers, - or _ can be contained." minlength="4" placeholder="david-thunder_2">
+                    </label>
+                    <!-- email -->
+                    <label for="email">
+                        *Email:
+                        <input type="email" required placeholder="davidjones@gmail.com" name="email" id="email">
+                    </label>
+                    <!-- first name -->
+                    <label for="firstName">
+                        First Name(optional):
+                        <input type="text" pattern="[a-zA-Z]{2,}" title="First name should at least be 2 characters long." placeholder="David" name="firstName" id="firstName">
+                    </label>
+                    <!-- last name -->
+                    <label for="lastName">
+                        Last Name(optional): 
+                        <input type="text" pattern="[a-zA-Z]{2,}" title="First name should at least be 2 characters long." placeholder="Jones" name="lastName" id="lastName">
+                    </label>
+                    <!-- password -->
+                    <label for="password">
+                        *Password:
+                        <input type="password" name="password" id="password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                        title="password must contain upper-case and lower-case characters, and numbers" minlength="8">
+                    </label>
+                    <!-- password confirmation -->
+                    <label for="password">
+                        *Password Repeat:
+                        <input type="password" id="password" minlength="8">
+                    </label>
+
+                </fieldset>
+                <!-- Personal info end -->
+            </form>
+        </article>
+        <!-- form end -->
     </main>
+    <!-- Main container end -->
 </body>
 </html>
